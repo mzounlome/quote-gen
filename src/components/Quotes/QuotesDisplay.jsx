@@ -1,17 +1,17 @@
-import { QuoteDiv } from "./QuotesDisplay-styles";
+import { QuoteDiv, TextDiv } from "./QuotesDisplay-styles";
 
 const QuotesDisplay = ({ currentQuote, authorQuotes }) => {
   return (
     <QuoteDiv>
-      {currentQuote.quote}
+      <TextDiv>{currentQuote.quote}</TextDiv>
       {authorQuotes.length > 0
         ? authorQuotes.map((quoteObj) => {
             if (currentQuote.quote !== quoteObj.quote) {
               return (
-                <div>
+                <TextDiv>
                   {" "}
                   {quoteObj.quote} <br />{" "}
-                </div>
+                </TextDiv>
               );
             }
           })

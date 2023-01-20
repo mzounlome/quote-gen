@@ -9,3 +9,6 @@ export const QuoteDiv = styled.div`
   padding-top: 16px;
   padding-left: 25px;
 `;
+export const TextDiv = styled.div`
+  margin-bottom: 50px;
+`;
